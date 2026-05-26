@@ -136,34 +136,7 @@ export default function Slide02_Agenda() {
         ))}
       </div>
 
-      {/* Stats row */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.9 }}
-        style={{
-          display: 'flex',
-          gap: '32px',
-          marginTop: '24px',
-          padding: '14px 28px',
-          background: 'rgba(240,180,41,0.04)',
-          border: '1px solid rgba(240,180,41,0.12)',
-          borderRadius: '12px',
-        }}
-      >
-        {[
-          { v: '48', l: 'Slides' },
-          { v: '40+', l: 'Minutes' },
-          { v: '5', l: 'Case Studies' },
-          { v: '2', l: 'Blockchains' },
-          { v: '33', l: 'References' },
-        ].map((s, i) => (
-          <div key={i} style={{ textAlign: 'center' }}>
-            <div style={{ fontFamily: 'var(--font-syne)', fontSize: '1.2rem', fontWeight: 700, color: 'var(--gold-bright)' }}>{s.v}</div>
-            <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: 'var(--ivory-600)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>{s.l}</div>
-          </div>
-        ))}
-      </motion.div>
+
     </SlideLayout>
   );
 }
